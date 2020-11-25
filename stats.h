@@ -9,32 +9,38 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * stats.h 
+ * function declarations 
  *
- * <Add Extended Description Here>
+ * declare only, do not implement it
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * Chen Muye
+ * Nov 25 2011
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
-
+ 
+void print_statistics(char *p, int len);
 /**
- * @brief <Add Brief Description of Function Here>
+ * @brief: print out min, max mean and median of an array
  *
- * <Add Extended Description Here>
+ * input array assumed to be integer
  *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
+ * @param int *p: a pointer pointing to the start of array
+ * @param int len: length of the array
+ 
+ * @return nothing
  */
+
+void print_array(char *p, int len);
+/**
+ * @brief: print out the 1D int array
+ * @param: int *p and int len
+ * @return nothing
+ */
+
 
 
 #endif /* __STATS_H__ */

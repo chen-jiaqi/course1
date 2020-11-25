@@ -9,17 +9,15 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ * @file stats.c 
+ * @brief implement functions and the main()
  *
- * <Add Extended Description Here>
+ * all functions except main() have been declared in stats.h
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Chen JIaqi
+ * @date Nov 25 2020
  *
  */
-
-
 
 #include <stdio.h>
 #include "stats.h"
@@ -37,7 +35,7 @@ void main() {
 
   /* Other Variable Declarations Go Here */
   /* Statistics and Printing Functions Go Here */
-
+  printf("fuck tanya\n");
 }
 
 /* Add other Implementation File Code Here */
