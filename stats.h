@@ -22,11 +22,11 @@
 #define __STATS_H__
 
 
-void print_statistics(char *p, int len);
+void print_statistics(int *p, int len);
 /**
  * @brief: print out min, max mean and median of an array
  *
- * input array assumed to be 1 byte char type
+ * input array assumed to be 1 byte  type
  *
  * @param int *p: a pointer pointing to the start of array
  * @param int len: length of the array
@@ -34,46 +34,46 @@ void print_statistics(char *p, int len);
  * @return nothing
  */
 
-void print_array(char *p, int len);
+void print_array(int *p, int len);
 /**
- * @brief: print out the char array
+ * @brief: print out the int array
  * @param: int *p and int len
  * @return nothing
  */
 
-char find_median(char *, int len);
+int find_median(int *p, int len);
 /**
 * @brief: find the median number of an input array with given length
 * @param: int *p and int len
-* @return: char type array element
+* @return: int type array element
 */
 
-char find_mean(char *, int len);
+int find_mean(int *p, int len);
 /**
 * @brief: find the mean number of an input array with given length
 * @param: int *p and int len
-* @return: char type array element
+* @return: int type array element
 */
 
-char find_maximum(char *, int len);
+int find_maximum(int *p, int len);
 /**
 * @brief: find the max number of an input array with given length
 * @param: int *p and int len
-* @return: char type array element
+* @return: int type array element
 */
 
-char find_minimum(char *, int len);
+int find_minimum(int *p, int len);
 /**
 * @brief: find the min number of an input array with given length
 * @param: int *p and int len
-* @return: char type array element
+* @return: int type array element
 */
 
-char* sort_array(char *, int len);
+int* sort_array(int *p, int len);
 /**
 * @brief: sort descently an input array with given length
 * @param: int *p and int len
-* @return: a pointer pointing to a char type array
+* @return: a pointer pointing to a int type array
 */
 
 #endif /* __STATS_H__ */
