@@ -39,29 +39,37 @@ void main() {
   int len;
   p = test;
   len = 30;
-
+  printf("the original array:\n");
   print_array(p, len);
+  print_statistics(p, len);
+}
 
+void print_statistics(int *p, int len){
   int avg;
   avg = find_mean(p, len);
-  printf("\tMean = %d\n", avg);
+
 
   int max;
   max = find_maximum(p,len);
-  printf("\tMax = %d\n", max);
+
 
   int min;
   min = find_minimum(p,len);
-  printf("\tMin = %d\n", min);
+
 
   int test2[SIZE];
-  for (int i = 0; i<SIZE; i++){test2[i]=test[i];}
+  for (int i = 0; i<SIZE; i++){test2[i]=*(p+i);}
   int *q = sort_array(test2,len);
+  printf("the sorted array is:\n");
   print_array(q,len);
 
   int med;
   med = find_median(q,len);
   printf("\tMedian = %d\n", med);
+
+  printf("\tMean = %d\n", avg);
+  printf("\tMax = %d\n", max);
+  printf("\tMin = %d\n", min);
 }
 
 /* Add other Implementation File Code Here */
@@ -73,7 +81,7 @@ void print_array(int *p, int len) {
   else {
     print_size = SIZE;
   }
-  printf("This is the target array:\n");
+
   for(int i = 0; i < print_size; i++){
     if ((i + 1)%8 > 0){
       printf("%d\t", *(p+i));
